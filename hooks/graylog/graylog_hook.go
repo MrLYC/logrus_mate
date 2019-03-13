@@ -4,7 +4,7 @@ import (
 	"github.com/sirupsen/logrus"
 	"gopkg.in/gemnasium/logrus-graylog-hook.v2"
 
-	"github.com/heralight/logrus_mate"
+	"github.com/mrlyc/logrus_mate"
 )
 
 type GraylogHookConfig struct {

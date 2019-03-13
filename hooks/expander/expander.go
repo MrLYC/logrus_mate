@@ -1,10 +1,10 @@
 package expander
 
 import (
-	"github.com/heralight/errors"
+	"github.com/mrlyc/errors"
 
 	"github.com/sirupsen/logrus"
-	"github.com/heralight/logrus_mate"
+	"github.com/mrlyc/logrus_mate"
 )
 
 type ExpanderHook struct {

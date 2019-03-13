@@ -11,39 +11,39 @@ import (
 )
 
 type Environments struct {
-	RunEnv string `json:"run_env"`
+	RunEnv string `json:"run_env" mapstructure:"run_env"`
 }
 
 type FormatterConfig struct {
-	Name    string  `json:"name"`
-	Options Options `json:"options"`
+	Name    string  `json:"name" mapstructure:"name"`
+	Options Options `json:"options" mapstructure:"options"`
 }
 
 type HookConfig struct {
-	Name    string  `json:"name"`
-	Options Options `json:"options"`
+	Name    string  `json:"name" mapstructure:"name"`
+	Options Options `json:"options" mapstructure:"options"`
 }
 
 type WriterConfig struct {
-	Name    string  `json:"name"`
-	Options Options `json:"options"`
+	Name    string  `json:"name" mapstructure:"name"`
+	Options Options `json:"options" mapstructure:"options"`
 }
 
 type LoggerItem struct {
-	Name   string                  `json:"name"`
-	Config map[string]LoggerConfig `json:"config"`
+	Name   string                  `json:"name" mapstructure:"name"`
+	Config map[string]LoggerConfig `json:"config" mapstructure:"config"`
 }
 
 type LoggerConfig struct {
-	Out       WriterConfig    `json:"out"`
-	Level     string          `json:"level"`
-	Hooks     []HookConfig    `json:"hooks"`
-	Formatter FormatterConfig `json:"formatter"`
+	Out       WriterConfig    `json:"out" mapstructure:"out"`
+	Level     string          `json:"level" mapstructure:"level"`
+	Hooks     []HookConfig    `json:"hooks" mapstructure:"hooks"`
+	Formatter FormatterConfig `json:"formatter" mapstructure:"formatter"`
 }
 
 type LogrusMateConfig struct {
-	EnvironmentKeys Environments `json:"env_keys"`
-	Loggers         []LoggerItem `json:"loggers"`
+	EnvironmentKeys Environments `json:"env_keys" mapstructure:"env_keys"`
+	Loggers         []LoggerItem `json:"loggers" mapstructure:"loggers"`
 }
 
 func (p *LogrusMateConfig) Serialize() (data []byte, err error) {

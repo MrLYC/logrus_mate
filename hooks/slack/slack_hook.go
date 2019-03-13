@@ -4,7 +4,7 @@ import (
 	"github.com/sirupsen/logrus"
 	"github.com/johntdyer/slackrus"
 
-	"github.com/heralight/logrus_mate"
+	"github.com/mrlyc/logrus_mate"
 )
 
 type SlackHookConfig struct {

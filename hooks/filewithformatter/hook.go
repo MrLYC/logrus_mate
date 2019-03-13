@@ -6,7 +6,7 @@ import (
 	"os/exec"
 	"strings"
 
-	"github.com/heralight/logrus_mate"
+	"github.com/mrlyc/logrus_mate"
 	"github.com/sirupsen/logrus"
 )
 

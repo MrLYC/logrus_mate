@@ -6,7 +6,7 @@ import (
 	"github.com/sirupsen/logrus"
 	logrus_syslog "github.com/sirupsen/logrus/hooks/syslog"
 
-	"github.com/heralight/logrus_mate"
+	"github.com/mrlyc/logrus_mate"
 )
 
 type SyslogHookConfig struct {

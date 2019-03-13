@@ -3,7 +3,7 @@ package logrus_stack
 import (
 	"strconv"
 
-	"github.com/heralight/logrus_mate"
+	"github.com/mrlyc/logrus_mate"
 	"github.com/sirupsen/logrus"
 )
 

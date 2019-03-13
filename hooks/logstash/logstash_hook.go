@@ -3,7 +3,7 @@ package logstash
 import (
 	"github.com/sirupsen/logrus"
 	"github.com/bshuster-repo/logrus-logstash-hook"
-	"github.com/heralight/logrus_mate"
+	"github.com/mrlyc/logrus_mate"
 )
 
 type LogstashHookConfig struct {

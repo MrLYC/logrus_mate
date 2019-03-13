@@ -68,7 +68,7 @@
                         "protocol": "tcp",
                         "address": "172.17.0.2:9999",
                         "always_sent_fields": {"serviceName": "myServiceName"},
-                        "prefix": "heralight"
+                        "prefix": "mrlyc"
                     }
                 }]
             }
